@@ -6,4 +6,5 @@ router = DefaultRouter(trailing_slash=True)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('apps.test_app.v1.urls')),
+    path('api/', include('apps.users.urls')),
 ]
